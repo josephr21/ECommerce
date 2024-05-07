@@ -1,0 +1,17 @@
+@model IEnumerable<Ecommerce.Models.Maglia>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maglie da Calcio</title>
+</head>
+<body>
+    <h1>Maglie da Calcio</h1>
+    <ul>
+        @foreach (var maglia in Model)
+        {
+            <li>@maglia.Squadra - @maglia.Taglia - €@maglia.Prezzo</li>
+        }
+    </ul>
+</body>
+</html>
